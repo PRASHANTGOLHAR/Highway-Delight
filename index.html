@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    footer {
+      display: flex;
+      background-color: rgb(18, 64, 75);
+      color: aliceblue;
+      flex-direction: column;
+      /* height: 250px; */
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 15px 0px;
+      /* margin: 10px 0px; */
+      /* padding-bottom: 20px; */
+    }
+
+    .container2 {
+      font-size: 12px;
+      text-decoration: none;
+    }
+    
+    .ft{
+      background-color: rgb(22, 94, 130);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      padding-top: 2px;
+      height: 30px;
+      color: white;
+      
+    }
+
+    .foot {
+      font-weight: bold;
+    }
+    .none{
+      text-decoration: none;
+      color: green;
+    }
+    a:hover{
+      color: white;
+    }
+  </style>
+  <title>highwaydelight</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid  ">
+      <img src="logo.png" width="90px" height="50px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+
+  </nav>
+
+  <div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active">
+          <img src="f1.jpeg" class="d-block w-100" height="160px" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="min-width-300">Welcome to Highway Delight</h1>
+            <h6>क्यों करे खुद का वक्त बर्बाद जब खेल स्वाद भोजन और फर्स्ट क्लास सर्विस एक ही साथ.</h6>
+            <button type="button" class="btn btn-success">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="f2.jpeg" class="d-block w-100" height="160px" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome to Highway Delight</h1>
+            <h6>क्यों करे खुद का वक्त बर्बाद जब खेल स्वाद भोजन और फर्स्ट क्लास सर्विस एक ही साथ.</h6>
+            <button type="button" class="btn btn-success">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="f3.jpeg" class="d-block w-100" height="160px" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome to Highway Delight</h1>
+            <h6>क्यों करे खुद का वक्त बर्बाद जब खेल स्वाद भोजन और फर्स्ट क्लास सर्विस एक ही साथ.</h6>
+            <button type="button" class="btn btn-success">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <div class="row mb-2 my-4">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static container-fluid">
+
+            <h3 class="mb-0">Family Dinner</h3>
+            <strong class="d-inline-block mb-2 text-success">Open</strong>
+            <p class="card-text mb-auto">Here are some captions for dinner with family that you may like. A strong
+              family has well-worn seats at the dinner table. Dinner is better when we eat together.</p>
+            
+          </div>
+          <div class="col-auto d-none d-lg-block active">
+            <img src="pic2.jpeg" class="bd-placeholder-img" width="250" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Birthday Party</h3>
+            <strong class="d-inline-block mb-2 text-success">Open</strong>
+
+            <p class="card-text mb-auto">Might have partied too hard at your b’day party. No regrets. Life’s too short
+              to not celebrate every chance you get!</p>
+            
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="birthday.jpg" class="bd-placeholder-img" width="250" height="250" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Couples</h3>
+            <strong class="d-inline-block mb-2 text-success">Open</strong>
+
+            <p class="mb-auto">A relationship is when one person is always right and the other person is the boyfriend.
+            </p>
+           
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="couple.jpeg" class="bd-placeholder-img" width="250" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Special Events Party</h3>
+            <strong class="d-inline-block mb-2 text-success">Open</strong>
+
+            <p class="mb-auto">Taco ’bout a party. Make the most out of tonight and worry about it all tomorrow. This is
+              my moment I just feel so alive.</p>
+          
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="pic1.jpeg" class="bd-placeholder-img" width="250" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container d-block w-100 ">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="birthday.jpg" class="d-block w-100" height="160px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pic1.jpeg" class="d-block w-100" height="160px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pic2.jpeg" class="d-block w-100" height="160px" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col ">
+            <div class="card shadow-sm ">
+              <img src="snacks.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Snacks</h5>
+                <p class="card-text">snacks that cater to specific dietary preferences. The best part is that all of
+                  their snacks are guilt-free, so you can munch away without any guilt or regrets. I highly recommend
+                  Snackible for anyone who is looking for healthier snack options.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="tanduri chicken.JPG" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Tanduri Chicken</h5>
+                <p class="card-text">Tandoori chicken has a warm flavor from spices like garam masala, turmeric, ginger,
+                  and cayenne pepper. This easy marinade for tandoori chicken is made with simple ingredients: Full-fat
+                  Greek yogurt – The main component of tandoori chicken marinade is yogurt! </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="chicken tikka.webp" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Chicken tikka</h5>
+                <p class="card-text">Chicken tikka is a chicken dish originating in the Indian subcontinent during the
+                  Mughal era, the dish is popular in India</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="panner tikka.JPG" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Panner tikka</h5>
+                <p class="card-text">Paneer Tikka Masala can literally be translated to grilled cottage cheese in a
+                  spiced gravy!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="chicken garlic tikka.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170"
+                alt="">
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Chicken garlic tikka</h5>
+                <p class="card-text">It is a spicy, sweet, and slightly sour crispy appetizer made with chicken, garlic
+                  tikka.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="harra bhara kabab.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Hara bhara Kabab</h5>
+                <p class="card-text">Hara Bhara Kabab are popular North Indian snack patties made with plenty of leafy
+                  greens and vegetables like spinach, coriander leaves, green peas, potatoes and spices. The name hara
+                  bhara kabab means kababs filled with greens.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="tanduri roti.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Tanduri roti</h5>
+                <p class="card-text">Tandoori Roti, mix maida, whole wheat flour, curd, salt, oil, sugar and baking
+                  powder in a bowl. Add water slowly and make a tight dough.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="tanduri butter roti.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170"
+                alt="">
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Tanduri butter roti</h5>
+                <p class="card-text">tandoori butter roti we have used curd instead of yeast as it helps in fermentation
+                  of the dough. Sugar is add which helps in fermentation and also to balance out the flavour, gives
+                  beautiful colour to the rotis.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="lachha paratha.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Lachha paratha</h5>
+                <p class="card-text">Lachha paratha is quite appetizing to look at, and even more interesting to bite
+                  into, because the layers separated by ghee give a crumbly, melt-in-the-mouth texture.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="butter nan.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Butter nan</h5>
+                <p class="card-text">Naan is an Indian bread which is on every restaurant menu. It is a rich Indian
+                  bread that goes well with most Indian gravies. Everyone loves the soft texture of a good Butter naan.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="aalu paratha.webp" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Aalu paratha</h5>
+                <p class="card-text">Aloo Paratha are popular Indian flatbreads stuffed with a delicious spiced potato
+                  mixture. In Hindi, Aloo means “Potatoes” and Paratha means “Layered Flatbreads”. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="panner paratha.jpg" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Panner paratha</h5>
+                <p class="card-text">Paneer paratha is a popular North Indian flatbread made with whole wheat flour
+                  dough and stuffed with savory, spiced, grated paneer (Indian cottage cheese) stuffing.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card shadow-sm">
+              <img src="garlic nan.webp" class="bd-placeholder-img card-img-top" width="100%" height="170" alt="">
+
+              <div class="card-body ">
+                <h4></h4>
+                <h5>Garlic nan</h5>
+                <p class="card-text">Mostly prepared during parties and celebrations, the list of curries to pair with
+                  garlic naan are endless. However, it pairs well with Malai Kofta, Butter Chicken, Shahi Paneer, and
+                  Dal Makhni.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success"><a href="registration.html" class="none" >Order Now</a></button>&nbsp;
+                    <button type="button" class="btn btn-outline-warning">Add to Card</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container3">
+    <a href="#" class="ft">Back to top</a>
+   
+  </div>
+  <div class="container1 ">
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="logo1.png" height="50px" width="70px" alt="">
+            <p class="container2 foot">©2023
+              Highway Delight
+            </p>
+          </div>
+          <div class="col-5">
+
+
+            <h6>Contact us</h6>
+            <p class="container2">292X+86C Highway Delight Family Restaurant Dhaba, Kuhi, Maharashtra
+              441202 <br>
+
+              <span class="foot">Owner</span>: Sandeep Hatwar <br>
+              <span class="foot">Mo No</span>: 9595561722
+            </p>
+          </div>
+          
+          <div class="col-4">
+          <h6>Connect with Us</h6>
+          
+              
+              <a href="" class="container2">Facebook</a><br>
+              <a href="https://www.instagram.com/highway_delight_hd_restaurant" class="container2">Instagram</a><br>
+              
+              
+          </div>
+        </div>
+        </div>
+    </footer>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
