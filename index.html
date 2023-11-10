@@ -55,11 +55,49 @@
     a:hover{
       color: white;
     }
+    .container10{
+      height: 70px;
+      width: 70px;
+      position: fixed;
+      display: flex;
+    margin: 520px 350px;
+
+      z-index: 1;
+      background-color: #ffff00;
+      border-radius: 35px;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+
+    }
+    @media (min-width:0px) and (max-width:1100px){
+    #first{
+        display: none;
+      
+    }
+    #second{
+        display: block;
+    }
+}
+@media (min-width:1100px) and (max-width:3457px){
+    #first{
+        display: block;
+    }
+    #second{
+        display: none;
+    }
+}
   </style>
   <title>highwaydelight</title>
 </head>
 
 <body>
+  
+    <div id="first">Error 404-Not found...<img src="error.png" width="70px" alt=""> <br> website only for desktop user's, please go through desktop only.</div>
+  
+  <div id="second">
+    
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid  ">
       <img src="logo.png" width="90px" height="50px" alt="">
@@ -93,6 +131,10 @@
 
 
   </nav>
+
+  <div class="container">
+    <div class="container10 rtl">My <br> Card</div>
+  </div>
 
   <div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -518,6 +560,7 @@
     </div>
   </div>
   <hr>
+  
 
   <div class="container3">
     <a href="#" class="ft">Back to top</a>
@@ -558,6 +601,7 @@
         </div>
         </div>
     </footer>
+  </div>
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
 
